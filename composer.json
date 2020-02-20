@@ -1,0 +1,32 @@
+{
+    "name": "eclubaddons/invoice-generator",
+    "description": "An invoice generator",
+    "type": "project",
+    "license": "MIT",
+	"authors": [
+        {
+            "name": "Jernej Zuraj",
+            "email": "jernej.zuraj@eavio.aero"
+        }
+    ],
+	"autoload": {
+        "psr-4": {
+			"eclubaddons\\invoice-generator\\": "."
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "ext-bcmath": "*",
+        "illuminate/support": "^5.0|^6.0",
+        "illuminate/view": "^5.0|^6.0",
+        "nesbot/carbon": ">1.22",
+        "dompdf/dompdf": "^0.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "eclubaddons\\invoice-generator\\InvoicesServiceProvider"
+            ]
+        }
+    },
+}
